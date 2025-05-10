@@ -7,7 +7,9 @@ export type Props = {
 };
 
 const Paragrafo = ({ children, tipo = 'principal', fontSize }: Props) => (
-  <ParagrafoStyled fontSize={fontSize} tipo={tipo}>{children}</ParagrafoStyled>
+  <ParagrafoStyled fontSize={fontSize} tipo={tipo}>
+    {children}
+  </ParagrafoStyled>
 );
 
 export default Paragrafo;
